@@ -1,14 +1,4 @@
-#1st solution
-def my_collect(collect)
-  array = []
-  collect.each do |collection|
-    yield(collection)
-    array << yield(collection)
-  end
-  array
-end
 
-#2nd solution using while
 def my_collect(collection)
   array = []
   i = 0
@@ -19,3 +9,13 @@ def my_collect(collection)
   array
 end
 
+=begin
+def my_collect(collect)
+  array = []
+  collect.each do |collection|
+    yield(collection)
+    array << yield(collection)
+  end
+  array
+end
+=end
